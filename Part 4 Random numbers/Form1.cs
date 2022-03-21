@@ -39,7 +39,7 @@ namespace Part_4_Random_numbers
         {
             double numbermin = Convert.ToDouble(txtmin.Text);
             double numbermax = Convert.ToDouble(txtmax.Text);
-            lblnumbers.Text = generator.NextDouble(numbermin, numbermax);
+            lblnumbers.Text = generator.NextDouble(numbermin, numbermax) + "";
         }
     }
 }

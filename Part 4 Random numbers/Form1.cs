@@ -37,9 +37,9 @@ namespace Part_4_Random_numbers
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double numbermin = Convert.ToDouble(txtmin.Text);
-            double numbermax = Convert.ToDouble(txtmax.Text);
-            lblnumbers.Text = generator.NextDouble(numbermin, numbermax) + "";
+            int numbermin = Convert.ToInt32(txtmin.Text);
+            int numbermax = Convert.ToInt32(txtmax.Text);
+            lblnumbers.Text = (generator.Next(numbermin, numbermax)  +generator.NextDouble()) + "";
         }
     }
 }
